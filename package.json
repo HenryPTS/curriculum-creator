@@ -1,0 +1,23 @@
+{
+  "name": "curriculum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "/bin/bash ./scripts/clean.sh",
+    "build": "node src/index.js",
+    "build-full": "npm run clean && node src/index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "html5-to-pdf": "^3.2.0",
+    "mustache": "^3.2.0",
+    "tar": "^5.0.5"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}

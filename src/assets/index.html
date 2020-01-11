@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+p, li, ul, span, div {
+  font-size: 12px;
+}
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  margin: 6px 0px 9px 0px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+@media print {
+  body {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    /* margin: 30mm 45mm 30mm 45mm;  */
+  }
+  main {
+    border: none;
+  }
+}
+body {
+  width: min-content;
+  margin: 0 auto;
+}
+.section-heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #904140;
+  font-weight: 400;
+}
+main {
+  display: grid;
+  grid-template-columns: 7cm 14cm;
+  grid-template-rows: 2cm repeat(3, minmax(3cm, min-content)) 0.3cm;
+  grid-row-gap: 10px;
+  grid-column-gap: 5px;
+  border-radius: 4px;
+}
+header {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+header > h3:nth-child(1) {
+  color: #904140;
+  font-size: 22.5px;
+  font-weight: 600;
+}
+header > h3:nth-child(2) {
+  color: #303030;
+  font-size: 22.5px;
+  font-weight: 600;
+}
+#sidebar {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#sidebar > article {
+  margin-bottom: 35px;
+}
+li {
+  margin: 5px 0;
+}
+#about-article {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+#career-article {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+#career-article > div > div:nth-of-type(1) > h4 {
+  color: #303030;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+#career-article > div > div:nth-of-type(2) > h4 {
+  color: #904140;
+  font-weight: 600;
+  max-width: 60px;
+}
+
+#career-article p {
+  margin-left: 5px;
+}
+
+.job-history-container {
+  color: #827c7c;
+  display: flex;
+  justify-content: space-between;
+  margin: 7px 0 9px;
+}
+/* #career-article p:last-of-type {
+  margin-bottom: 41px;
+} */
+
+#skills-article {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+#skills-article ul {
+  list-style: inherit;
+  padding-left: 15px;
+}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <title>Curriculum Vitae</title>
+</head>
+<body>
+  <main id="grid">
+    <header>
+      <h3>Henry Steinberg</h3>
+      <h3>Full-Stack JS Developer</h3>
+    </header>
+    <div id="sidebar">
+      <article id="details-article">
+        <h4 class="section-heading">personal details</h4>
+        <ul>
+          <li>Henry Steinberg</li>
+          <li>13/08/1991</li>
+          <li>Hertfordshire</li>
+          <li>07516 109353</li>
+          <li><a href="mailto:steinberghenry@protonmail.com">steinberghenry@protonmail.com</a></li>
+          <li><a href="//github.com/HenryPTS" target="_blank">github.com/HenryPTS</a></li>
+        </ul>
+      </article>
+      <article id="keywords-article">
+        <h4 class="section-heading">key skills</h4>
+        <ul>
+          <li>React/Redux, Webpack</li>
+          <li>HTML5, CSS3, Javascript, Jquery</li>
+          <li>Styled Components, Sass, Less</li>
+          <li>Git, Github, Bitbucket</li>
+          <li>Node, Express</li>
+          <li>MongoDB, Mongoose, Sqlite</li>
+          <li>Selenium, Jest</li>
+          <li>Canvas, Svg</li>
+        </ul>
+      </article>
+    </div>
+    <article id="about-article">
+      <h4 class="section-heading">about me</h4>
+      <p>
+        I'm a versatile JS developer with a strong grounding in both
+        the front and back end, and I'm searching for a
+        position as a React developer. React is my main strength, but I
+        hope to be able to find a position where I might have opportunities
+        to put other skills to work too.
+      </p>
+      <p>
+        I began coding as a hobbyist at a young age and decided to make a career
+        out of it in Autumn of 2018. My long-enduring interest in computing gives me
+        the drive necessary to keep up with the rapid pace of development in the field.
+      </p>
+    </article>
+    <article id="career-article">
+      <h4 class="section-heading">career</h4>
+      <div>
+      <div class="job-history-container">
+        <div>
+          <h4>Full Stack Developer</h4>
+          <h4>TERDSGN</h4>
+        </div>
+        <div>
+          <h4>11-2018 Present</h4>
+        </div>
+      </div>
+      <p>
+        Most of my time at TERDSGN was spent working as a contractor for a Silicon Valley company.
+        My main duty was to turn sketch mockups into functional components for a React/Redux webapp.
+        I also created actions and reducers for interacting with the internal API, and I occasionally used D3 for data visualisation.
+        As a team we followed Atomic Design principles in regards to our internal organisation and to the structure of our project.
+      </p>
+      <p>
+        I was also responsible for developing a Selenium framework for automated cross-browser testing,
+        and I was able to significantly increase the webapp's browser compatibility range.
+      </p>
+      <p>
+        I was the sole developer of a complex medium-sized internal project, which required a webapp, and a server with a database.
+        I developed it using React/Redux, Express, and MongoDB over a period of three months.
+      </p>
+      <p style="margin-bottom: 20px;">I also worked briefly with React Native during this period.</p>
+      </div>
+      <div class="job-history-container">
+        <div>
+          <h4>Warehouse Operative</h4>
+          <h4>CAMRA</h4>
+        </div>
+        <div>
+          <h4>01-2018 09-2018</h4>
+        </div>
+      </div>
+
+      <div class="job-history-container">
+        <div>
+          <h4>Bar Staff</h4>
+          <h4>Slug & Lettuce Cafe</h4>
+        </div>
+        <div>
+          <h4>02-2017 12-2017</h4>
+        </div>
+      </div>
+
+      <div class="job-history-container">
+        <div>
+          <h4>ESL Teacher</h4>
+          <h4>Freelance</h4>
+        </div>
+        <div>
+          <h4>08-2016 10-2016</h4>
+        </div>
+      </div>
+    </article>
+    <article id="skills-article">
+      <h4 class="section-heading">skills</h4>
+      <ul>
+        <li>A versatile developer who welcomes new challenges</li>
+        <li>Over a year of React/Redux with no interruption</li>
+        <li>I have worked in large SCRUM teams, and solo</li>
+        <li>RESTful APIs with Node, Express, and MongoDB</li>
+        <li>Responsive layouts with CSS Grid and Flexbox</li>
+        <li>Sass, Less, CSS3, and styled-components</li>
+        <li>Over a year of using git for version control</li>
+        <li>Testing with Mocha, Chai, Jest, Selenium</li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>

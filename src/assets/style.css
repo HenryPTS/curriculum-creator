@@ -1,0 +1,126 @@
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+p, li, ul, span, div {
+  font-size: 12px;
+}
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  margin: 6px 0px 9px 0px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+@media print {
+  body {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    /* margin: 30mm 45mm 30mm 45mm;  */
+  }
+  main {
+    border: none;
+  }
+}
+body {
+  width: min-content;
+  margin: 0 auto;
+}
+.section-heading {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #904140;
+  font-weight: 400;
+}
+main {
+  display: grid;
+  grid-template-columns: 7cm 14cm;
+  grid-template-rows: 2cm repeat(3, minmax(3cm, min-content)) 0.3cm;
+  grid-row-gap: 10px;
+  grid-column-gap: 5px;
+  border-radius: 4px;
+}
+header {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+header > h3:nth-child(1) {
+  color: #904140;
+  font-size: 22.5px;
+  font-weight: 600;
+}
+header > h3:nth-child(2) {
+  color: #303030;
+  font-size: 22.5px;
+  font-weight: 600;
+}
+#sidebar {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#sidebar > article {
+  margin-bottom: 35px;
+}
+li {
+  margin: 5px 0;
+}
+
+li a[href] {
+  color: #904140;
+}
+
+#about-article {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+#career-article {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+#career-article > div > div:nth-of-type(1) > h4 {
+  color: #303030;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+#career-article > div > div:nth-of-type(2) > h4 {
+  color: #904140;
+  font-weight: 600;
+  max-width: 60px;
+}
+
+#career-article p {
+  margin-left: 5px;
+}
+
+.job-history-container {
+  color: #827c7c;
+  display: flex;
+  justify-content: space-between;
+  margin: 7px 0 9px;
+}
+/* #career-article p:last-of-type {
+  margin-bottom: 41px;
+} */
+
+#skills-article {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+#skills-article ul {
+  list-style: inherit;
+  padding-left: 15px;
+}
+
+.job-container:nth-child(1) {
+  margin-bottom: 20px;
+}

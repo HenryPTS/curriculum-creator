@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <title>Curriculum Vitae</title>
+</head>
+<body>
+  <main id="grid">
+    <header>
+      <h3>{{header.name}}</h3>
+      <h3>{{header.title}}</h3>
+    </header>
+    <div id="sidebar">
+      {{#sidebar}}
+        <article>
+          <h4 class="section-heading">{{title}}</h4>
+          <ul>
+            {{#items}}
+              {{#email}}
+                <li><a href="mailto:{{text}}">{{text}}</a></li>
+              {{/email}}
+              {{#url}}
+                <li><a href="https://{{text}}" target="_blank">{{text}}</a></li>
+              {{/url}}
+              {{^text}}
+                <li>{{.}}</li>
+              {{/text}}
+            {{/items}}
+          </ul>
+        </article>
+      {{/sidebar}}
+    </div>
+    <article id="about-article">
+      <h4 class="section-heading">about me</h4>
+      {{#about}}
+        <p>{{.}}</p>
+      {{/about}}
+    </article>
+  
+    <article id="career-article">
+      <h4 class="section-heading">career</h4>
+      {{#jobs}}
+        <div class="job-container">
+          <div class="job-history-container">
+            <div>
+              <h4>{{title}}</h4>
+              <h4>{{company}}</h4>
+            </div>
+            <div>
+              <h4>{{when}}</h4>
+            </div>
+          </div>
+          {{#text}}
+            <p>{{.}}</p>
+          {{/text}}
+        </div>
+      {{/jobs}}
+    </article>
+
+    <article id="skills-article">
+      <h4 class="section-heading">skills</h4>
+      <ul>
+        {{#skills}}
+          <li>{{.}}</li>
+        {{/skills}}
+      </ul>
+    </article>
+  </main>
+</body>
+</html>

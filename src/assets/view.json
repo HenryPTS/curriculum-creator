@@ -1,0 +1,80 @@
+{
+  "header": {
+    "name": "Henry Steinberg",
+    "title": "Full-Stack JS Developer"
+  },
+  "sidebar": [
+    {
+      "title": "personal details",
+      "items": [
+        "Henry Steinberg",
+        "Hertfordshire",
+        "13/08/91",
+        "07516 109353",
+        {"text": "steinberghenry@protonmail.com", "email": "true"},
+        {"text": "github.com/HenryPTS", "url": "true"}
+      ]
+    },
+    {
+      "title": "key skills",
+      "items": [
+        "React/Redux, Webpack",
+        "HTML5, CSS3, Javascript, Jquery",
+        "Styled Components, Sass, Less",
+        "Git, Github, Bitbucket",
+        "Node, Express",
+        "MongoDB, Mongoose, Sqlite",
+        "Selenium, Jest",
+        "Canvas, Svg"
+      ]
+    }
+  ],
+  "about": [
+    "I'm a versatile JS developer with a strong grounding in both the front and back end, and I'm searching for a position as a React developer. React is my main strength, but I hope to be able to find a position where I might have opportunities to put other skills to work too.",
+    "I began coding as a hobbyist at a young age and decided to make a career out of it in Autumn of 2018. My long-enduring interest in computing gives me the drive necessary to keep up with the rapid pace of development in the field."
+  ],
+  "jobs": [
+    {
+      "title": "Full-Stack JS Developer",
+      "company": "TERDSGN",
+      "when": "11-2018 - Present",
+      "text": [
+        "Most of my time at TERDSGN was spent working as a contractor for a Silicon Valley company. My main duty was to turn sketch mockups into functional components for a React/Redux webapp. I also created actions and reducers for interacting with the internal API, and I occasionally used D3 for data visualisation. As a team we followed Atomic Design principles in regards to our internal organisation and to the structure of our project.",
+
+        "I was also responsible for developing a Selenium framework for automated cross-browser testing, and I was able to significantly increase the webapp's browser compatibility range.",
+
+        "I was the sole developer of a complex medium-sized internal project, which required a webapp, and a server with a database. I developed it using React/Redux, Express, and MongoDB over a period of three months.",
+
+        "I also worked briefly with React Native during this period."
+      ]
+    },
+    {
+      "title": "Warehouse Operative",
+      "company": "CAMRA",
+      "when": "01-2018 - 09-2018",
+      "text": []
+    },
+    {
+      "title": "Bar Staff",
+      "company": "Slug & Lettuce Cafe",
+      "when": "02-2017 - 12-2017",
+      "text": []
+    },
+    {
+      "title": "ESL Teacher",
+      "company": "Freelance",
+      "when": "08-2016 - 10-2016",
+      "text": []
+    }
+  ],
+  "skills": [
+    "A versatile developer who welcomes new challenges",
+    "Over a year of React/Redux with no interruption",
+    "I have worked in large SCRUM teams, and solo",
+    "RESTful APIs with Node, Express, and MongoDB",
+    "Responsive layouts with CSS Grid and Flexbox",
+    "Sass, Less, CSS3, and styled-components",
+    "Over a year of using git for version control",
+    "Testing with Mocha, Chai, Jest, Selenium"
+  ]
+}
