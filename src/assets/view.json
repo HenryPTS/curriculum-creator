@@ -19,7 +19,9 @@
       "title": "key skills",
       "items": [
         "React/Redux, Webpack",
-        "HTML5, CSS3, Javascript, Jquery",
+        "Javascript, Typescript, Jquery",
+        "Docker, Kubernetes, Jenkins",
+        "HTML5, CSS3",
         "Styled Components, Sass, Less",
         "Git, Github, Bitbucket",
         "Node, Express",
