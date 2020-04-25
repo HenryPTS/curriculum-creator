@@ -1,6 +1,6 @@
-const tar = require('tar')
+import tar from 'tar'
 
-async function create(file, C = '/', ...files) {
+export default async function create(file: string, C = '/', ...files: readonly string[]) {
   try {
     const res = await tar.c({
       C,
@@ -15,8 +15,4 @@ async function create(file, C = '/', ...files) {
     console.log(error)
     return error
   }
-}
-
-module.exports = {
-  create
 }

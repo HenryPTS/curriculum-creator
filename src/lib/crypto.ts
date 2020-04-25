@@ -1,17 +1,13 @@
-const crypto = require('crypto')
+import crypto from 'crypto'
 
-function createHash(data) {
-  return new Promise((resolve, reject) => {
+export const createHash: (data:any) => Promise<string> = (data) => {
+  return new Promise<string>((resolve, reject) => {
     if (Array.isArray(data)) data = data.join('__')
     const hash = crypto
-      .createHash('md5', 'hex')
+      .createHash('md5')
       .update(data, 'utf8')
       .digest('hex')
     if (!hash) return reject('No hash')
     return resolve(hash)
   })
-}
-
-module.exports = {
-  createHash
 }

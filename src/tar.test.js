@@ -1,6 +1,6 @@
-const tar = require('./tar')
-const path = require('path')
-const { access, unlink } = require('./utils')
+import tar from './tar'
+import path from 'path'
+import { access } from './utils'
 
 test('An archive is created with .gitignore and package.json', async () => {
   const res = await tar.create(
