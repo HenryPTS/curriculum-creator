@@ -2,10 +2,13 @@
   "name": "curriculum",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "./dist/bundle.js",
+  "bin": {
+    "make-cv": "./bin/index.js"
+  },
   "scripts": {
     "clean": "/bin/bash ./scripts/clean.sh",
-    "build": "rimraf ./build && ./node_modules/.bin/webpack --config webpack.config.js",
+    "build": "rimraf ./dist && ./node_modules/.bin/webpack --config webpack.config.js",
     "start": "npm run build && npm run exe",
     "exe": "node dist/bundle.js",
     "build-full": "npm run clean && node src/index.js",
@@ -24,6 +27,7 @@
   "devDependencies": {
     "@types/eslint": "^6.8.0",
     "@types/jest": "^25.2.1",
+    "@types/mustache": "^4.0.1",
     "@types/node": "^13.13.2",
     "@types/tar": "^4.0.3",
     "@typescript-eslint/eslint-plugin": "^2.29.0",

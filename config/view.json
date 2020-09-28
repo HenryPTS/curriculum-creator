@@ -41,13 +41,17 @@
       "company": "TERDSGN",
       "when": "11-2018 - Present",
       "text": [
-        "Most of my time at TERDSGN was spent working as a contractor for a Silicon Valley company. My main duty was to turn sketch mockups into functional components for a React/Redux webapp. I also created actions and reducers for interacting with the internal API, and I occasionally used D3 for data visualisation. As a team we followed Atomic Design principles in regards to our internal organisation and to the structure of our project.",
+        "Most of my time at TERDSGN was spent working as a contractor for Petasense, a Silicon Valley company. My main duty was to turn sketch mockups into functional components for a React/Redux webapp. I also created actions and reducers for interacting with the internal API, and I occasionally used D3 for data visualisation. As a team we followed Atomic Design principles in regards to our internal organisation and to the structure of our project.",
 
         "I was also responsible for developing a Selenium framework for automated cross-browser testing, and I was able to significantly increase the webapp's browser compatibility range.",
 
-        "I was the sole developer of a complex medium-sized internal project, which required a webapp, and a server with a database. I developed it using React/Redux, Express, and MongoDB over a period of three months.",
+        "I was the sole developer of Iteration1, a complex medium-sized internal project currently in closed beta, which required a webapp, and a server with a database. I developed it using React/Redux, Express, and MongoDB over a period of three months.",
 
-        "I also worked briefly with React Native during this period."
+        "I also worked briefly with React Native during this period.",
+
+        "As part of TERDSGN I was the sole developer of Hexagoal, a React and canvas based image creation application",
+
+        "Most recently I have been developing another medium sized React/Redux application for a US-based company for Voicegain. I used D3 for data visualisation."
       ]
     },
     {
